@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ihome</string>
+    <string name="action_settings">Definições BT Sist.</string>
+    <string name="device">Sel.Dispositivo</string>
+    <string name="pair">Emparelhar</string>
+    <string name="accao">Pesquisar</string>
+    <string name="estado_ligacao_device">Estado</string>
+    <string name="nothing_connected">Não Connectado</string>
+
+</resources>

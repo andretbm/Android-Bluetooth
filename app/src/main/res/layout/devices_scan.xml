@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/imagebl"
+            android:layout_width="25dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/blue_on"
+            android:layout_marginLeft="3dip"
+            android:scaleType="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="ON"
+            android:id="@+id/ligado"/>
+
+        <ProgressBar
+            android:id="@+id/progress_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:indeterminate="true"
+            android:paddingLeft="30dp"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/includeBoundedButton"
+            android:layout_below="@+id/includeBoundedButton"
+            android:theme="@style/AppTheme.WhiteAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Parar"
+            android:id="@+id/accao"
+            android:textColor="#46bdbf"/>
+
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/progress_spinner"
+            android:layout_below="@+id/progress_spinner"
+            android:paddingLeft="30dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:theme="@style/SCBSwitch" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="DISPOSITIVOS EMPARELHADOS"
+            android:id="@+id/txt1"/>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+               android:text="______________________"
+                android:id="@+id/txt10"/> />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+    android:layout_width="wrap_content"
+    android:layout_height="5dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewConnected"
+        android:layout_below="@+id/includeBoundedButton"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="DISPOSITIVOS DISPONÍVEIS"
+            android:id="@+id/txt2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_________________________"
+            android:layout_alignLeft="@+id/txt20" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:id="@+id/listViewNotConnect"
+        android:layout_below="@+id/listViewConnected"
+       />
+
+</LinearLayout>

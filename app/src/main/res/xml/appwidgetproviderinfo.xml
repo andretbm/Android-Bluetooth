@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.example.afs.ihome.MainActivity"
+    android:initialLayout="@layout/activity_main"
+    android:minHeight="30dp"
+    android:minWidth="100dp"
+    android:updatePeriodMillis="21600000" ><!-- 6hrs -->
+
+</appwidget-provider>

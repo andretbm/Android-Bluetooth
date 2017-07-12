@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.afs.ihome.MainActivity">
+
+
+
+    <item
+        android:id="@+id/action_alarme"
+        android:orderInCategory="100"
+        android:title="@string/estado_ligacao_device"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/desconnectado" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_select"
+        android:orderInCategory="100"
+        android:title="@string/device"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_pair"
+        android:orderInCategory="100"
+        android:title="@string/pair"
+        app:showAsAction="never"/>
+
+</menu>
